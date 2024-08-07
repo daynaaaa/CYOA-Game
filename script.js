@@ -1,6 +1,3 @@
-//Press a button to choose your path
-//See the README file for more information
-
 /* VARIABLES */
 let enterButton;
 let a1Button;
@@ -9,7 +6,7 @@ let b1Button;
 let b2Button;
 let screen = 0;
 
-/* SETUP RUNS ONCE */
+/* SETUP */
 function setup() {
   createCanvas(600, 400);
   textAlign(CENTER);
@@ -32,7 +29,7 @@ function setup() {
   b2Button = new Sprite(-150, -150);
 }
 
-/* DRAW LOOP REPEATS */
+/* DRAW */
 function draw() {
   // Display enter button
   enterButton.w = 100;
@@ -71,7 +68,7 @@ function draw() {
   }
 }
 
-/* FUNCTIONS TO DISPLAY SCREENS */
+/* FUNCTIONS */
 function showScreen1() {
   background("paleturquoise");
   text("Welcome to screen one. Make your first choice", width / 2, height / 2 - 100);
